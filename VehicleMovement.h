@@ -13,11 +13,13 @@ void HAL_DELAY(__uint32_t ms);
 #define MV_BOTTOM_OF_REST_BAND (MV_CENTER_VALUE - MV_REST_VALUE)
 
 enum mv_RXsignalIndex{
-MV_RX_UPDOWN,
-MV_RX_LEFTRIGHT
+	MV_RX_UPDOWN,
+	MV_RX_LEFTRIGHT,
+
+	MV_RX_MAX
 };
 typedef struct {
-		__uint32_t y,x;
+	__uint32_t y,x;
 } MV_JoystickPosition;
 
 typedef enum {
